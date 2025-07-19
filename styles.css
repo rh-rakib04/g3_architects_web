@@ -96,7 +96,7 @@ header {
   margin: auto;
 }
 .quick-list-text h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-family: 800;
   max-width: 468px;
   margin-bottom: 10px;
@@ -113,8 +113,68 @@ header {
 }
 .quick-list-text p {
   color: rgba(114, 114, 114, 1);
+  margin: 0;
 }
-
+/* features style */
+.features-section {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  gap: 140px;
+}
+.features-text h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  max-width: 460px;
+  padding-left: 20px;
+  border-left: 5px solid rgba(255, 144, 14, 1);
+  margin-bottom: 5px;
+}
+.features-text p {
+  max-width: 580px;
+  color: rgba(114, 114, 114, 1);
+  margin-bottom: 30px;
+}
+.feature {
+  padding: 20px 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  max-width: 580px;
+  max-height: 170px;
+}
+.feature h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.feature p {
+  color: rgba(114, 114, 114, 1);
+}
+.feature-img {
+  position: relative;
+}
+.experience {
+  padding: 46px 42px;
+  background-color: rgba(255, 144, 14, 1);
+  color: white;
+  border-radius: 10px;
+  max-width: 340px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 40px;
+  left: -80px;
+}
+.experience h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+}
+.experience span {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
 /* responsive layout */
 @media only screen and (max-width: 576px) {
   /* header */
@@ -134,15 +194,49 @@ header {
   .banner img {
     width: 100%;
   }
+  .banner h2 {
+    margin: 10px;
+  }
   /* quick list */
   .quick-list {
     display: grid;
     justify-content: center;
     margin: auto;
+    gap: 0;
   }
+
   .quick-list-img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+  }
+  /* features */
+  .features-section {
+    margin: 50px auto;
+    display: grid;
+    justify-content: center;
+    gap: 0;
+  }
+  .feature-img {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+  }
+  .feature-img img {
+    width: 100%;
+  }
+  .experience {
+    position: initial;
+    padding: 10px 20px;
+  }
+  .experience h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .experience span {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
   }
 }
