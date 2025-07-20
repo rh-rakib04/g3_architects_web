@@ -175,8 +175,43 @@ header {
   font-weight: 500;
   font-size: 1.5rem;
 }
+/* facts style */
+.facts {
+  display: grid;
+  max-width: 1440px;
+  margin: 50px auto;
+  gap: 60px;
+}
+.facts-text h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+.facts-text p {
+  color: rgba(114, 114, 114, 1);
+  max-width: 540px;
+}
+.facts-card {
+  display: flex;
+}
+.fact-card {
+  padding: 45px 35px;
+  text-align: center;
+  border: 1px solid rgba(255, 144, 14, 1);
+  border-radius: 10px;
+  flex: 1;
+  margin: 60px;
+}
+.fact-card h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 10px;
+}
+.fact-card span {
+  font-size: 1.25rem;
+  font-weight: ;
+}
 /* responsive layout */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   /* header */
   .nav {
     display: grid;
@@ -196,6 +231,9 @@ header {
   }
   .banner h2 {
     margin: 10px;
+  }
+  header {
+    margin-bottom: 50px;
   }
   /* quick list */
   .quick-list {
@@ -238,5 +276,18 @@ header {
     text-align: center;
     font-weight: 500;
     font-size: 1rem;
+  }
+  .facts {
+    gap: 0;
+  }
+  .facts-card {
+    display: grid;
+
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  .fact-card {
+    margin: 10px;
   }
 }
