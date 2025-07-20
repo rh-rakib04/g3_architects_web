@@ -192,6 +192,8 @@ header {
 }
 .facts-card {
   display: flex;
+  gap: 80px;
+  margin: 50px;
 }
 .fact-card {
   padding: 45px 35px;
@@ -199,7 +201,6 @@ header {
   border: 1px solid rgba(255, 144, 14, 1);
   border-radius: 10px;
   flex: 1;
-  margin: 60px;
 }
 .fact-card h3 {
   font-size: 2.8rem;
@@ -319,14 +320,17 @@ header {
     gap: 0;
   }
   .facts-card {
-    display: grid;
-
-    grid-template-columns: repeat(2, 2fr);
+    /* display: grid;
+    grid-template-columns: repeat(2, 2fr); */
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    flex: 1;
   }
   .fact-card {
-    margin: 10px;
+    max-width: 200px;
+    margin: auto;
   }
   /* sponsor style */
   .sponsors-img {
